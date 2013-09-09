@@ -1,0 +1,28 @@
+{
+  "name": "MapViewer",
+  "version": "0.0.1",
+  "start": "node server.js",
+  "description": "",
+  "homepage": "",
+  "main": "",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "author": "brandon15811",
+  "license": "GPL",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "socket.io": "0.9.x",
+    "node-static": "0.6.x"
+  },
+  "engine": "node >= 0.8.x",
+  "devDependencies": {}
+}
