@@ -67,7 +67,7 @@ class MapViewer implements Plugin
                         print_r($players['players']);
 
                         ServerAPI::request()->send(0, json_encode($players), true, "127.0.0.1",
-                            4629);
+                            9614);
                 }
                 break;
         }
@@ -82,7 +82,7 @@ class MapViewer implements Plugin
                     "x" => $data->get('position')['x'],
                     "y" => $data->get('position')['y'],
                     "z" => $data->get('position')['z'],
-                    "player" => $data->get('caseusername'))), true, "127.0.0.1",4629);
+                    "player" => $data->get('caseusername'))), true, "127.0.0.1",9614);
                 break;
 
             case "player.move":
@@ -91,13 +91,13 @@ class MapViewer implements Plugin
                     "x" => $data->x,
                     "y" => $data->y,
                     "z" => $data->z,
-                    "player" => $data->name)), true, "127.0.0.1", 4629);
+                    "player" => $data->name)), true, "127.0.0.1", 9614);
                 break;
 
             case "player.quit":
                 ServerAPI::request()->send(0, json_encode(array(
                     "event" => "player.quit",
-                    "player" => $data->entity->name)), true, "127.0.0.1", 4629);
+                    "player" => $data->entity->name)), true, "127.0.0.1", 9614);
                 break;
         }
     }

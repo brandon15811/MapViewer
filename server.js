@@ -30,7 +30,7 @@ players['players'] = {};
 //HTTP
 app.listen(9615);
 //UDP
-udpserver.bind(4629);
+udpserver.bind(9614);
 
 function handler(req, res)
 {
